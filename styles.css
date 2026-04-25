@@ -447,6 +447,11 @@ h1 {
   font-weight: 700;
 }
 
+.contact-link-muted {
+  color: var(--muted);
+  font-weight: 600;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
