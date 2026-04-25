@@ -4,3 +4,4 @@ if (footerYear) {
   footerYear.textContent = `Updated ${new Date().getFullYear()}`;
 }
 
+
