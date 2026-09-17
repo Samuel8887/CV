@@ -27,10 +27,16 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Prepare website files
+        run: |
+          mkdir -p _site/assets
+          cp index.html styles.css app.js .nojekyll _site/
+          cp assets/Samuel_Madsen_CV.pdf assets/favicon.svg _site/assets/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Deploy to GitHub Pages
         id: deployment
